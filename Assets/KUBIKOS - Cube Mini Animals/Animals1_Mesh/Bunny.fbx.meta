@@ -1,0 +1,594 @@
+fileFormatVersion: 2
+guid: c7ee8295279c4f958738595485ebfb99
+timeCreated: 1505754545
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Body
+    100002: //RootNode
+    100004: Bunny
+    100006: Bunny_Root
+    100008: Ear_L_1
+    100010: Ear_L_2
+    100012: Ear_L_2 1
+    100014: Ear_L_3
+    100016: Ear_L_4
+    100018: Ear_R_1
+    100020: Ear_R_2
+    100022: Ear_R_2 1
+    100024: Ear_R_3
+    100026: Ear_R_4
+    100028: Eye_L
+    100030: Eye_R
+    100032: Leg_L
+    100034: Leg_R
+    100036: Toe_Finger_1_L
+    100038: Toe_Finger_1_R
+    100040: Toe_Finger_2_L
+    100042: Toe_Finger_2_R
+    100044: Toe_L
+    100046: Toe_R
+    100048: Ear_L_5
+    100050: Ear_R_5
+    400000: Body
+    400002: //RootNode
+    400004: Bunny
+    400006: Bunny_Root
+    400008: Ear_L_1
+    400010: Ear_L_2
+    400012: Ear_L_2 1
+    400014: Ear_L_3
+    400016: Ear_L_4
+    400018: Ear_R_1
+    400020: Ear_R_2
+    400022: Ear_R_2 1
+    400024: Ear_R_3
+    400026: Ear_R_4
+    400028: Eye_L
+    400030: Eye_R
+    400032: Leg_L
+    400034: Leg_R
+    400036: Toe_Finger_1_L
+    400038: Toe_Finger_1_R
+    400040: Toe_Finger_2_L
+    400042: Toe_Finger_2_R
+    400044: Toe_L
+    400046: Toe_R
+    400048: Ear_L_5
+    400050: Ear_R_5
+    4300000: Bunny
+    7400000: Idle
+    7400002: Walk
+    7400004: Jump
+    7400006: Attack
+    7400008: Hit
+    7400010: Jump Inplace
+    9500000: //RootNode
+    13700000: Bunny
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bunny
+        weight: 1
+      - path: Bunny_Root
+        weight: 1
+      - path: Bunny_Root/Body
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2/Ear_L_2 1
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2/Ear_L_2 1/Ear_L_3
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2/Ear_L_2 1/Ear_L_3/Ear_L_4
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2/Ear_R_2 1
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2/Ear_R_2 1/Ear_R_3
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2/Ear_R_2 1/Ear_R_3/Ear_R_4
+        weight: 1
+      - path: Bunny_Root/Body/Eye_L
+        weight: 1
+      - path: Bunny_Root/Body/Eye_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L/Toe_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L/Toe_L/Toe_Finger_1_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L/Toe_L/Toe_Finger_1_L/Toe_Finger_2_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R/Toe_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R/Toe_R/Toe_Finger_1_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R/Toe_R/Toe_Finger_1_R/Toe_Finger_2_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 40
+      lastFrame: 51
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bunny
+        weight: 1
+      - path: Bunny_Root
+        weight: 1
+      - path: Bunny_Root/Body
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2/Ear_L_2 1
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2/Ear_L_2 1/Ear_L_3
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2/Ear_L_2 1/Ear_L_3/Ear_L_4
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2/Ear_R_2 1
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2/Ear_R_2 1/Ear_R_3
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2/Ear_R_2 1/Ear_R_3/Ear_R_4
+        weight: 1
+      - path: Bunny_Root/Body/Eye_L
+        weight: 1
+      - path: Bunny_Root/Body/Eye_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L/Toe_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L/Toe_L/Toe_Finger_1_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L/Toe_L/Toe_Finger_1_L/Toe_Finger_2_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R/Toe_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R/Toe_R/Toe_Finger_1_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R/Toe_R/Toe_Finger_1_R/Toe_Finger_2_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jump
+      takeName: Take 001
+      firstFrame: 52
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bunny
+        weight: 1
+      - path: Bunny_Root
+        weight: 1
+      - path: Bunny_Root/Body
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2/Ear_L_2 1
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2/Ear_L_2 1/Ear_L_3
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2/Ear_L_2 1/Ear_L_3/Ear_L_4
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2/Ear_R_2 1
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2/Ear_R_2 1/Ear_R_3
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2/Ear_R_2 1/Ear_R_3/Ear_R_4
+        weight: 1
+      - path: Bunny_Root/Body/Eye_L
+        weight: 1
+      - path: Bunny_Root/Body/Eye_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L/Toe_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L/Toe_L/Toe_Finger_1_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L/Toe_L/Toe_Finger_1_L/Toe_Finger_2_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R/Toe_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R/Toe_R/Toe_Finger_1_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R/Toe_R/Toe_Finger_1_R/Toe_Finger_2_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attack
+      takeName: Take 001
+      firstFrame: 70
+      lastFrame: 83
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bunny
+        weight: 1
+      - path: Bunny_Root
+        weight: 1
+      - path: Bunny_Root/Body
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2/Ear_L_2 1
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2/Ear_L_2 1/Ear_L_3
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2/Ear_L_2 1/Ear_L_3/Ear_L_4
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2/Ear_R_2 1
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2/Ear_R_2 1/Ear_R_3
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2/Ear_R_2 1/Ear_R_3/Ear_R_4
+        weight: 1
+      - path: Bunny_Root/Body/Eye_L
+        weight: 1
+      - path: Bunny_Root/Body/Eye_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L/Toe_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L/Toe_L/Toe_Finger_1_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L/Toe_L/Toe_Finger_1_L/Toe_Finger_2_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R/Toe_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R/Toe_R/Toe_Finger_1_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R/Toe_R/Toe_Finger_1_R/Toe_Finger_2_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hit
+      takeName: Take 001
+      firstFrame: 83
+      lastFrame: 114
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bunny
+        weight: 1
+      - path: Bunny_Root
+        weight: 1
+      - path: Bunny_Root/Body
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2/Ear_L_2 1
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2/Ear_L_2 1/Ear_L_3
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2/Ear_L_2 1/Ear_L_3/Ear_L_4
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2/Ear_R_2 1
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2/Ear_R_2 1/Ear_R_3
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2/Ear_R_2 1/Ear_R_3/Ear_R_4
+        weight: 1
+      - path: Bunny_Root/Body/Eye_L
+        weight: 1
+      - path: Bunny_Root/Body/Eye_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L/Toe_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L/Toe_L/Toe_Finger_1_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L/Toe_L/Toe_Finger_1_L/Toe_Finger_2_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R/Toe_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R/Toe_R/Toe_Finger_1_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R/Toe_R/Toe_Finger_1_R/Toe_Finger_2_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jump Inplace
+      takeName: Take 001
+      firstFrame: 114
+      lastFrame: 130
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bunny
+        weight: 1
+      - path: Bunny_Root
+        weight: 1
+      - path: Bunny_Root/Body
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2/Ear_L_5
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2/Ear_L_5/Ear_L_3
+        weight: 1
+      - path: Bunny_Root/Body/Ear_L_1/Ear_L_2/Ear_L_5/Ear_L_3/Ear_L_4
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2/Ear_R_5
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2/Ear_R_5/Ear_R_3
+        weight: 1
+      - path: Bunny_Root/Body/Ear_R_1/Ear_R_2/Ear_R_5/Ear_R_3/Ear_R_4
+        weight: 1
+      - path: Bunny_Root/Body/Eye_L
+        weight: 1
+      - path: Bunny_Root/Body/Eye_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L/Toe_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L/Toe_L/Toe_Finger_1_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_L/Toe_L/Toe_Finger_1_L/Toe_Finger_2_L
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R/Toe_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R/Toe_R/Toe_Finger_1_R
+        weight: 1
+      - path: Bunny_Root/Body/Leg_R/Toe_R/Toe_Finger_1_R/Toe_Finger_2_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
