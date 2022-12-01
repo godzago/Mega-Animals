@@ -26,12 +26,12 @@ public class CubeSpawnerScripts : MonoBehaviour
     }
     private IEnumerator SetCube()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
             currentCube = PickRandomCube();
     }
     private CubeScripts PickRandomCube()
     {
-        GameObject temp = Instantiate(cubeList[Random.Range(0, cubeList.Count)].gameObject, spawnPoint.position, Quaternion.identity);
+        GameObject temp = Instantiate(cubeList[Random.Range(0, cubeList.Count)].gameObject, spawnPoint.position, Quaternion.Euler(0,-180,0));
         return temp.GetComponent<CubeScripts>();
     }
 }

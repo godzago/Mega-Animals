@@ -12,25 +12,31 @@ public class CubeScripts : MonoBehaviour
     [HideInInspector] public int CubeNumber;
      public Rigidbody CubeRigidbody;
     [HideInInspector] public bool IsMainCube;
+    public int MyID;
+    public int value;
+
     private void Awake()
     {
-        //CubeID = staticID++;
-        //cubeMeshRenderer = GetComponent<MeshRenderer>();
+        MyID = GetInstanceID();
         CubeRigidbody = GetComponent<Rigidbody>();
     }
 
-    //public void SetColor(Color color)
-    //{
-    //    CubeColor = color;
-    //    //cubeMeshRenderer.material.color = color;
-    //}
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("enemy01"))
+        {
+            if (collision.gameObject.TryGetComponent(out CubeScripts cube))
+            {
+                if(cube.value == value)
+                {
+                    Destroy(gameObject);
+                }
+                else
+                {
+                    Debug.Log("DÝFFRETN CUBE");
+                }
+            }
+        }
+    }
 
-    //public void SetNumber(int number)
-    //{
-    //    CubeNumber = number;
-    //    for (int i = 0; i < 6; i++)
-    //    {
-    //        numbersText[i].text = number.ToString();
-    //    }
-    //}
 }
