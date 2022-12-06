@@ -64,7 +64,7 @@ PlayerSettings:
   use32BitDisplayBuffer: 1
   preserveFramebufferAlpha: 0
   disableDepthAndStencilBuffers: 0
-  androidStartInFullscreen: 1
+  androidStartInFullscreen: 0
   androidRenderOutsideSafeArea: 0
   androidUseSwappy: 1
   androidBlitType: 1
@@ -147,7 +147,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.DefaultCompany.Shootingball
+    Android: com.RPSMobileGames.Shootingball
   buildNumber:
     Standalone: 0
     iPhone: 0

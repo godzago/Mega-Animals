@@ -16,10 +16,6 @@ public class CubeSpawnerScripts : MonoBehaviour
         currentCube = PickRandomCube();
     }
 
-    private void Update()
-    {
-        
-    }
     private void OnTriggerEnter(Collider other)
     {
             StartCoroutine(SetCube());    

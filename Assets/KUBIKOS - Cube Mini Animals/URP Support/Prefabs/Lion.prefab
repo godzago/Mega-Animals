@@ -383,10 +383,12 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -443,7 +445,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7791223310205430399}
-  - component: {fileID: 7880468600503815743}
   m_Layer: 0
   m_Name: Lion
   m_TagString: Untagged
@@ -467,25 +468,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &7880468600503815743
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7785703581723163385}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: bbfb6f7db0794cd6b22c04e08d2c2bbf, type: 3}
-  m_Controller: {fileID: 22100000, guid: 5a6173c7ec0640a092fb7caefd820ba8, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7785736345844189541
 GameObject:
   m_ObjectHideFlags: 0

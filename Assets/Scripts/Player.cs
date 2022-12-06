@@ -15,7 +15,6 @@ public class Player : MonoBehaviour
     public CubeScripts mainCube;
 
     private bool isPointerDown;
-    private bool canMove;
     private Vector3 cubePos;
 
     public CubeSpawnerScripts CubeSpawnerScripts;

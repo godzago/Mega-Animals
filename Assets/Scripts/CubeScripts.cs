@@ -10,15 +10,23 @@ public class CubeScripts : MonoBehaviour
     [HideInInspector] public int CubeID;
     [HideInInspector] public Color CubeColor;
     [HideInInspector] public int CubeNumber;
-     public Rigidbody CubeRigidbody;
+    public Rigidbody CubeRigidbody;
     [HideInInspector] public bool IsMainCube;
-    public int MyID;
+
     public int value;
+
+    [SerializeField] GameManager _gameManager;
+
+    [SerializeField] ParticleSystem _particleSystem;
+
+    private Collider _collider;
+    private float daynanicMat = 1f;
 
     private void Awake()
     {
-        MyID = GetInstanceID();
+        _collider = GetComponent<Collider>();
         CubeRigidbody = GetComponent<Rigidbody>();
+        _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -27,16 +35,21 @@ public class CubeScripts : MonoBehaviour
         {
             if (collision.gameObject.TryGetComponent(out CubeScripts cube))
             {
-                if(cube.value == value)
+                if (cube.value == value)
                 {
-                    Destroy(gameObject);
-                }
-                else
-                {
-                    Debug.Log("DÝFFRETN CUBE");
+                    CubeRigidbody.AddForce(transform.up * 500);
+                    StartCoroutine(SetCloseGameObject());
+                    _gameManager.ScorManager();
+                    _collider.material.dynamicFriction = daynanicMat;
                 }
             }
         }
     }
 
+    public IEnumerator SetCloseGameObject()
+    {
+        _particleSystem = Instantiate(_particleSystem, gameObject.transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(0.5f);
+        this.gameObject.SetActive(false);
+    }
 }

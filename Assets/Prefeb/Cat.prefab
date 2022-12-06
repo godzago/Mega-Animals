@@ -200,7 +200,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4570769711729376307}
   - component: {fileID: 7371326742774227323}
-  - component: {fileID: 4480159310642339981}
   - component: {fileID: 7371326742774227322}
   - component: {fileID: 7371326742774227321}
   m_Layer: 0
@@ -219,7 +218,7 @@ Transform:
   m_GameObject: {fileID: 4573679502094412213}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0.09099999, z: -4.038}
-  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 4571190871182808327}
   - {fileID: 4571557883899008929}
@@ -243,27 +242,10 @@ MonoBehaviour:
   CubeNumber: 0
   CubeRigidbody: {fileID: 7371326742774227322}
   IsMainCube: 0
-  MyID: 1
+  MyID: 0
   value: 2
---- !u!95 &4480159310642339981
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4573679502094412213}
-  m_Enabled: 0
-  m_Avatar: {fileID: 9000000, guid: a4b1e30245c74ff4a8f87596a84db0dc, type: 3}
-  m_Controller: {fileID: 22100000, guid: 5274923b7873444384d8db701e7c7e03, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  _gameManager: {fileID: 0}
+  _particleSystem: {fileID: 8202728001287004628, guid: dca5bba98a5503a4c895ec5cc0918b13, type: 3}
 --- !u!54 &7371326742774227322
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -291,8 +273,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.0286144, z: 1}
+  m_Center: {x: -0, y: 0.5853261, z: -0}
 --- !u!1 &4574024922096839923
 GameObject:
   m_ObjectHideFlags: 0
