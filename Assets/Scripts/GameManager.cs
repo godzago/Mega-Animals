@@ -5,7 +5,7 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    public int Puan;
+    public static int Puan;
     public TextMeshProUGUI scoreText;
 
     private void Awake()

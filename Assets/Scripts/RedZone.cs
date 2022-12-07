@@ -9,7 +9,7 @@ public class RedZone : MonoBehaviour
 
     private void Awake()
     {
-        _uýManager = GameObject.Find("Canvas").GetComponent<UIManager>();
+        _uýManager = GameObject.Find("Canvas").GetComponent<UIManager>();       
     }
 
     private void OnTriggerStay(Collider other)
@@ -19,7 +19,7 @@ public class RedZone : MonoBehaviour
         if (cube != null)
         {
             if (!cube.IsMainCube && cube.CubeRigidbody.velocity.magnitude < .1f)
-            {
+            {               
                 _uýManager.GameOver();              
             }
         }

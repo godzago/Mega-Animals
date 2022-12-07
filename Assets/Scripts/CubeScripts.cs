@@ -22,6 +22,10 @@ public class CubeScripts : MonoBehaviour
     private Collider _collider;
     private float daynanicMat = 1f;
 
+    public SpriteRenderer _sprite;
+
+    [SerializeField] AudioClip _Clip;
+
     private void Awake()
     {
         _collider = GetComponent<Collider>();
@@ -31,6 +35,7 @@ public class CubeScripts : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+
         if (collision.gameObject.CompareTag("enemy01"))
         {
             if (collision.gameObject.TryGetComponent(out CubeScripts cube))
@@ -41,11 +46,22 @@ public class CubeScripts : MonoBehaviour
                     StartCoroutine(SetCloseGameObject());
                     _gameManager.ScorManager();
                     _collider.material.dynamicFriction = daynanicMat;
+                    SoundManager.Instance.PlaySound(_Clip);
                 }
             }
         }
     }
-
+    private void LateUpdate()
+    {
+        if (CubeRigidbody.velocity.magnitude == 0)
+        {
+            _sprite.color = new Color(r: 1f, g: 1f, b: 1f, a: 0f);
+        }
+        else
+        {
+            _sprite.color = new Color(r: 1f, g: 1f, b: 1f, a: 0.1f);
+        }
+    }
     public IEnumerator SetCloseGameObject()
     {
         _particleSystem = Instantiate(_particleSystem, gameObject.transform.position, Quaternion.identity);
