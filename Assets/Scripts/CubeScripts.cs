@@ -42,7 +42,7 @@ public class CubeScripts : MonoBehaviour
             {
                 if (cube.value == value)
                 {
-                    CubeRigidbody.AddForce(transform.up * 500);
+                    CubeRigidbody.AddForce(transform.up * 350);
                     StartCoroutine(SetCloseGameObject());
                     _gameManager.ScorManager();
                     _collider.material.dynamicFriction = daynanicMat;
@@ -51,7 +51,7 @@ public class CubeScripts : MonoBehaviour
             }
         }
     }
-    private void LateUpdate()
+    private void Update()
     {
         if (CubeRigidbody.velocity.magnitude == 0)
         {
@@ -65,7 +65,7 @@ public class CubeScripts : MonoBehaviour
     public IEnumerator SetCloseGameObject()
     {
         _particleSystem = Instantiate(_particleSystem, gameObject.transform.position, Quaternion.identity);
-        yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(0.4f);
         this.gameObject.SetActive(false);
     }
 }

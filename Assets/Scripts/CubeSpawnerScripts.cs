@@ -10,18 +10,20 @@ public class CubeSpawnerScripts : MonoBehaviour
     public CubeScripts currentCube;
     public Transform spawnPoint;
 
+    private bool gameison;
     private void Start()
     {
         currentCube = PickRandomCube();
+        gameison = true;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-            StartCoroutine(SetCube());    
+            StartCoroutine(SetCube());       
     }
     private IEnumerator SetCube()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.75f);
             currentCube = PickRandomCube();
     }
     private CubeScripts PickRandomCube()

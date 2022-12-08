@@ -12,10 +12,12 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Time.timeScale = 1f;
+        Application.targetFrameRate = 60;
     }
     private void Start()
     {
         scoreText.text = Puan.ToString();
+        HighScoreText.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
     }
     public void ScorManager()
     {
