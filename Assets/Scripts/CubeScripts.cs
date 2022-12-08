@@ -65,7 +65,7 @@ public class CubeScripts : MonoBehaviour
     public IEnumerator SetCloseGameObject()
     {
         _particleSystem = Instantiate(_particleSystem, gameObject.transform.position, Quaternion.identity);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.75f);
         this.gameObject.SetActive(false);
     }
 }

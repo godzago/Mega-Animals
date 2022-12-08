@@ -8,8 +8,7 @@ public class CubeSpawnerScripts : MonoBehaviour
 
     public List<CubeScripts> cubeList = new List<CubeScripts>();
     public CubeScripts currentCube;
-    public Transform spawnPoint; 
-
+    public Transform spawnPoint;
 
     private void Start()
     {
