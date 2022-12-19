@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.IO;
 
 public class UIManager : MonoBehaviour
 {
@@ -23,7 +24,6 @@ public class UIManager : MonoBehaviour
             PlayerPrefs.SetInt("Sound", 1);
         }
     }
-
     private void Start()
     {
         if (PlayerPrefs.GetInt("Sound") == 1)
@@ -35,7 +35,6 @@ public class UIManager : MonoBehaviour
             AudioListener.volume = 0;
         }
     }
-
     public void SettingsClose()
     {
         settings_Close.SetActive(false);
@@ -62,7 +61,6 @@ public class UIManager : MonoBehaviour
             AudioListener.volume = 0;
         }
     }
-
     public void SoundOn()
     {
         Sound_On.SetActive(false);
@@ -77,12 +75,10 @@ public class UIManager : MonoBehaviour
         AudioListener.volume = 0.75f;
         PlayerPrefs.SetInt("Sound", 1);
     }
-
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-
     public void GameOver()
     {
         _GameOverScane.SetActive(true);
