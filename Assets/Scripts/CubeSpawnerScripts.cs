@@ -9,22 +9,25 @@ public class CubeSpawnerScripts : MonoBehaviour
     public List<CubeScripts> cubeList = new List<CubeScripts>();
     public CubeScripts currentCube;
     public Transform spawnPoint;
+    private UIManager _uýManager;
 
-    private bool gameison;
+    private void Awake()
+    {
+        _uýManager = GameObject.Find("Canvas").GetComponent<UIManager>();
+    }
     private void Start()
     {
         currentCube = PickRandomCube();
-        gameison = true;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-            StartCoroutine(SetCube());       
+            StartCoroutine(SetCube());          
     }
     private IEnumerator SetCube()
     {
-        yield return new WaitForSeconds(0.75f);
-            currentCube = PickRandomCube();
+            yield return new WaitForSeconds(0.75f);
+            currentCube = PickRandomCube();          
     }
     private CubeScripts PickRandomCube()
     {

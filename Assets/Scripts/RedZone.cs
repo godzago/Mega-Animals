@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class RedZone : MonoBehaviour
 {
     private UIManager _uýManager;
-
+    [SerializeField] GameObject _gameOverTwo;
     private void Awake()
     {
         _uýManager = GameObject.Find("Canvas").GetComponent<UIManager>();       
@@ -19,9 +19,17 @@ public class RedZone : MonoBehaviour
         if (cube != null)
         {
             if (!cube.IsMainCube && cube.CubeRigidbody.velocity.magnitude < .1f)
-            {               
-                _uýManager.GameOver();              
+            {
+                _gameOverTwo.SetActive(true);
+                StartCoroutine(GameOverTwo());         
             }
         }
+    }
+    public IEnumerator GameOverTwo()
+    {
+        Time.timeScale = 0;
+        yield return new WaitForSecondsRealtime(1.25f);
+        _gameOverTwo.SetActive(false);
+        _uýManager.GameOver();
     }
 }

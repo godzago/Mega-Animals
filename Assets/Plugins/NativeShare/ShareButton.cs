@@ -25,7 +25,7 @@ public class ShareButton : MonoBehaviour
         Destroy(ss);
 
         new NativeShare().AddFile(filePath)
-            .SetSubject("Subject goes here").SetText("Hello world!").SetUrl("https://github.com/yasirkula/UnityNativeShare")
+            .SetSubject("Subject goes here").SetText("You must try!")
             .SetCallback((result, shareTarget) => Debug.Log("Share result: " + result + ", selected app: " + shareTarget))
             .Share();
     }

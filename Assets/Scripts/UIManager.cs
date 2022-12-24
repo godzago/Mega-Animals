@@ -82,6 +82,5 @@ public class UIManager : MonoBehaviour
     public void GameOver()
     {
         _GameOverScane.SetActive(true);
-        Time.timeScale = 0f;
     }
 }

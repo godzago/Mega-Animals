@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
     public int Puan;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI HighScoreText;
-
     private void Awake()
     {
         Time.timeScale = 1f;
