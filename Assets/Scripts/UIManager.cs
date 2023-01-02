@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 using System.IO;
+using GameAnalyticsSDK;
+using AppsFlyerSDK;
 
 public class UIManager : MonoBehaviour
 {
@@ -16,6 +18,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject settings_Close;
     [SerializeField] GameObject Sound_On;
     [SerializeField] GameObject Sound_Close;
+
+    public static int level;
 
     private void Awake()
     {
@@ -77,10 +81,19 @@ public class UIManager : MonoBehaviour
     }
     public void RestartGame()
     {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);       
+    }
+    public void RestartGameApssFlayer()
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        level++;
+        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, level.ToString());
+        AppsFlyer.sendEvent("LevelComplete", new Dictionary<string, string>(level));
     }
     public void GameOver()
     {
         _GameOverScane.SetActive(true);
+        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Fail, level.ToString());
+        AppsFlyer.sendEvent("LevelFail", new Dictionary<string, string>(level));
     }
 }
