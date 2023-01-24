@@ -26,6 +26,8 @@ public class CubeScripts : MonoBehaviour
 
     [SerializeField] AudioClip _Clip;
 
+    private float time = 0.2f;
+
     private void Awake()
     {
         _collider = GetComponent<Collider>();
@@ -35,16 +37,21 @@ public class CubeScripts : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-
+        float b = 0;
         if (collision.gameObject.CompareTag("enemy01"))
-        {
+        {         
             if (collision.gameObject.TryGetComponent(out CubeScripts cube))
             {
                 if (cube.value == value)
                 {
                     CubeRigidbody.AddForce(transform.up * 350);
                     StartCoroutine(SetCloseGameObject());
-                    _gameManager.ScorManager();
+                    if (Time.time >= b+time)
+                    {
+                        b = Time.time;
+
+                        _gameManager.ScorManager();
+                    }                   
                     _collider.material.dynamicFriction = daynanicMat;
                     SoundManager.Instance.PlaySound(_Clip);
                 }
