@@ -4,9 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
-using System.IO;
-using GameAnalyticsSDK;
-using AppsFlyerSDK;
 
 public class UIManager : MonoBehaviour
 {
@@ -83,17 +80,8 @@ public class UIManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);       
     }
-    public void RestartGameApssFlayer()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        level++;
-        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, level.ToString());
-        AppsFlyer.sendEvent("LevelComplete", new Dictionary<string, string>(level));
-    }
     public void GameOver()
     {
         _GameOverScane.SetActive(true);
-        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Fail, level.ToString());
-        AppsFlyer.sendEvent("LevelFail", new Dictionary<string, string>(level));
     }
 }

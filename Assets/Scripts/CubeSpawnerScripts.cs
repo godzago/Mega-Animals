@@ -10,8 +10,12 @@ public class CubeSpawnerScripts : MonoBehaviour
     public CubeScripts currentCube;
     public Transform spawnPoint;
     private UIManager _uýManager;
-    [SerializeField] GameObject AdsgameObject;
+
+    //[SerializeField] GameObject AdsgameObject;
+
     private int winBool  = 0;
+
+    [SerializeField] private ADManager adsmanager;
 
     private void Awake()
     {
@@ -24,14 +28,19 @@ public class CubeSpawnerScripts : MonoBehaviour
     }
     private void Start()
     {
-        currentCube = PickRandomCube();
-
-        if (PlayerPrefs.GetInt("CuneCount", cubeList.Count) == 11 && winBool == 0)
-        {
-            cubeList[cubeList.Count + 1] = AdsgameObject.GetComponent<CubeScripts>();
-            winBool = 1;
-        }      
+        currentCube = PickRandomCube();     
     }
+    //private void Update()
+    //{
+    //    if (adsmanager.adsShownig == true)
+    //    {
+    //        if (PlayerPrefs.GetInt("CuneCount", cubeList.Count) == 10 && winBool == 0)
+    //        {
+    //            cubeList[cubeList.Count + 1] = AdsgameObject.GetComponent<CubeScripts>();
+    //            winBool = 1;
+    //        }
+    //    }
+    //}
 
     private void OnTriggerEnter(Collider other)
     {

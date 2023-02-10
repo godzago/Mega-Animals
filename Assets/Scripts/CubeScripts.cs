@@ -26,7 +26,7 @@ public class CubeScripts : MonoBehaviour
 
     [SerializeField] AudioClip _Clip;
 
-    private float time = 0.2f;
+    private float time = 0.8f;
 
     private void Awake()
     {
