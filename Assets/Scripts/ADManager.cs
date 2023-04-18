@@ -17,7 +17,7 @@ public class ADManager : MonoBehaviour
 
     public void RequestBanner()
     {
-        string adUnitId = "ca-app-pub-3940256099942544/6300978111";
+        string adUnitId = "ca-app-pub-5470335878091326/2946304913";
 
 
         bannerView = new BannerView(adUnitId, AdSize.Banner, AdPosition.Bottom);
