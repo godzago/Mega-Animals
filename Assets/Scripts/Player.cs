@@ -71,7 +71,6 @@ public class Player : MonoBehaviour
         mainCube.IsMainCube = false;
     }
 
-
     private void OnDestroy()
     {
         //remove listeners:

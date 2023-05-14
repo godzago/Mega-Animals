@@ -15,7 +15,7 @@ public class CubeScripts : MonoBehaviour
 
     public int value;
 
-    [SerializeField] GameManager _gameManager;
+    [SerializeField] HighScoreManager _gameManager;
 
     [SerializeField] ParticleSystem _particleSystem;
 
@@ -32,7 +32,7 @@ public class CubeScripts : MonoBehaviour
     {
         _collider = GetComponent<Collider>();
         CubeRigidbody = GetComponent<Rigidbody>();
-        _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        _gameManager = GameObject.Find("GameManager").GetComponent<HighScoreManager>();
     }
 
     private void OnCollisionEnter(Collision collision)
