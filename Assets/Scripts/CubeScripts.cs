@@ -32,7 +32,7 @@ public class CubeScripts : MonoBehaviour
     {
         _collider = GetComponent<Collider>();
         CubeRigidbody = GetComponent<Rigidbody>();
-        _gameManager = GameObject.Find("GameManager").GetComponent<HighScoreManager>();
+        _gameManager = GameObject.Find("HighScoreManager").GetComponent<HighScoreManager>();
     }
 
     private void OnCollisionEnter(Collision collision)
